@@ -25,3 +25,13 @@ Please contribute to this repository to help it make better. Any change like new
 * Go to any program and run that program
 * Go to any test and run the junit test.
 * Run ./gradlew build to create classes, run tests and create jar.
+
+
+conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/
+
+conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge
+
+conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/msys2/
+
+conda config --set show_channel_urls yes   # 设置搜索时显示通道地址
+
