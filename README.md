@@ -26,9 +26,9 @@
 #ifndef CPU_ZERO_VM_METHODHANDLES_ZERO_HPP
 #define CPU_ZERO_VM_METHODHANDLES_ZERO_HPP
 // Adapters
-static unsigned int adapter_code_size() {
-  return sizeof(ZeroEntry) * (Interpreter::method_handle_invoke_LAST - Interpreter::method_handle_invoke_FIRST + 1);
-}
+enum /* platform_dependent_constants */ {
+  adapter_code_size = sizeof(ZeroEntry) * 6
+};
 private:
   static oop popFromStack(TRAPS);
   static void invoke_target(methodOop method, TRAPS);
